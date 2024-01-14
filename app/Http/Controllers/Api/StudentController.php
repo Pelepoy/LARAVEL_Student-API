@@ -21,7 +21,7 @@ class StudentController extends Controller
                 'success'  => false,
                 'message'  => 'No records found',
                 'students' => []
-            ], 200);
+            ], 404);
         } else {
             return response()->json([
                 'success'  => true,
